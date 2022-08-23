@@ -2,6 +2,7 @@ package com.example.calculatorproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -12,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     /*
     sources:
     https://www.tutorialkart.com/kotlin-android/kotlin-android-button-background-color/
+    https://www.geeksforgeeks.org/math-pow-method-in-java-with-example/
+
 
      */
     @Override
@@ -75,9 +78,15 @@ public class MainActivity extends AppCompatActivity {
 
         int num1 = Integer.parseInt((number1ET.getText().toString()));
         int num2 = Integer.parseInt((number2ET.getText().toString()));
-        int sum = ;
+        int sum = (int) Math.pow(num1, num2);
 
         numberSumTV.setText("" + sum);
+    }
+
+    public void switchScreen(View view){
+
+        Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
     }
 
 
