@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">The Calculator</string>
+
+    <string name = "currDrop1"> dropDownMenu1</string><string-array name="Currencies">
+    <item>United States Dollar</item>
+    <item>Canadian Dollar</item>
+    <item>Australian  Dollar</item>
+    <item>Euro</item>
+    <item>Japanese Yen</item>
+    <item>Chinese Yuan</item>
+    <item>Indian Rupee</item>
+    <item>Mexican Peso</item>
+    <item>Swiss Franc</item>
+
+
+
+</string-array>
 </resources>
