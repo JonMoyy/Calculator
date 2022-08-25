@@ -26,12 +26,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
-
-        double num1 = Integer.parseInt((number1ET.getText().toString()));
-        double num2 = Integer.parseInt((number2ET.getText().toString()));
-        double sum = num1 + num2;
-
-        numberSumTV.setText("" + sum);
+        try{
+            double num1 = Integer.parseInt((number1ET.getText().toString()));
+            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double sum = num1 + num2;
+            numberSumTV.setText("" + sum);
+        }catch(Exception e){
+            numberSumTV.setText("Please enter a number");
+        }
     }
 
     public void findSub(View view){
@@ -39,11 +41,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
 
-        double num1 = Integer.parseInt((number1ET.getText().toString()));
-        double num2 = Integer.parseInt((number2ET.getText().toString()));
-        double sum = num1 - num2;
-
-        numberSumTV.setText("" + sum);
+        try{
+            double num1 = Integer.parseInt((number1ET.getText().toString()));
+            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double sum = num1 - num2;
+            numberSumTV.setText("" + sum);
+        }catch(Exception e){
+            numberSumTV.setText("Please enter a number");
+        }
     }
 
     public void findDiv(View view){
@@ -51,23 +56,32 @@ public class MainActivity extends AppCompatActivity {
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
 
-        double num1 = Integer.parseInt((number1ET.getText().toString()));
-        double num2 = Integer.parseInt((number2ET.getText().toString()));
-        double sum = num1 / num2;
+        try{
+            double num1 = Integer.parseInt((number1ET.getText().toString()));
+            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double sum = num1 / num2;
+            numberSumTV.setText("" + sum);
+        }catch(Exception e){
+            numberSumTV.setText("Please enter a number");
+        }
 
-        numberSumTV.setText("" + sum);
     }
 
     public void findMulti(View view){
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
+        try{
+            double num1 = Integer.parseInt((number1ET.getText().toString()));
+            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double sum = num1 * num2;
+            numberSumTV.setText("" + sum);
+        }catch(Exception e){
+            numberSumTV.setText("Please enter a number");
+        }
 
-        double num1 = Integer.parseInt((number1ET.getText().toString()));
-        double num2 = Integer.parseInt((number2ET.getText().toString()));
-        double sum = num1 * num2;
 
-        numberSumTV.setText("" + sum);
+
     }
 
 
@@ -75,12 +89,17 @@ public class MainActivity extends AppCompatActivity {
         EditText number1ET = findViewById(R.id.num1ET);
         EditText number2ET = findViewById(R.id.num2ET);
         TextView numberSumTV = findViewById(R.id.resultTV);
+        try{
+            double num1 = Integer.parseInt((number1ET.getText().toString()));
+            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double sum = Math.pow(num1, num2);
+            numberSumTV.setText("" + sum);
+        }catch(Exception e){
+            numberSumTV.setText("Please enter a number");
+        }
 
-        double num1 = Integer.parseInt((number1ET.getText().toString()));
-        double num2 = Integer.parseInt((number2ET.getText().toString()));
-        double sum = Math.pow(num1, num2);
 
-        numberSumTV.setText("" + sum);
+
     }
 
     public void switchScreen(View view){

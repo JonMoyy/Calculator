@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    android:background="@color/teal_200"
     tools:context=".MainActivity">
 
 
@@ -60,7 +60,6 @@
         app:layout_constraintVertical_bias="0.09" />
 
     <Button
-        android:id="@+id/DivButton"
         android:layout_width="142dp"
         android:layout_height="70dp"
         android:layout_marginEnd="52dp"
