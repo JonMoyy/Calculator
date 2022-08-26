@@ -98,8 +98,12 @@ public class MainActivity extends AppCompatActivity {
             numberSumTV.setText("Please enter a number");
         }
 
+    }
 
+    public void clearNumbers(View view){
 
+        TextView numberSumTV = findViewById(R.id.resultTV);
+        numberSumTV.setText("");
     }
 
     public void switchScreen(View view){

@@ -9,29 +9,54 @@
 
 
     <Button
-        android:id="@+id/funButton"
-        android:layout_width="143dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="156dp"
+        android:id="@+id/ClearButton"
+        android:layout_width="124dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="372dp"
         android:backgroundTint="@color/orange"
-        android:onClick="switchScreen"
-        android:text="Fun Calcs"
+        android:text="C"
+        android:onClick="clearNumbers"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        app:layout_constraintEnd_toStartOf="@+id/powerButton"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DivButton"
-        app:layout_constraintVertical_bias="1.0" />
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="142dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="288dp"
+        android:backgroundTint="@color/orange"
+        android:onClick="findAdd"
+        android:text="+"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/multButton"
+        android:layout_width="142dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/orange"
+        android:onClick="findMulti"
+        android:text="x"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton"
+        app:layout_constraintVertical_bias="0.064" />
 
     <Button
         android:id="@+id/powerButton"
         android:layout_width="142dp"
         android:layout_height="70dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="40dp"
         android:backgroundTint="@color/orange"
         android:onClick="findPower"
         android:text="^"
@@ -40,7 +65,24 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addButton"
-        app:layout_constraintVertical_bias="0.42" />
+        app:layout_constraintVertical_bias="0.477" />
+
+    <Button
+        android:id="@+id/funButton"
+        android:layout_width="143dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="108dp"
+        android:backgroundTint="@color/orange"
+        android:onClick="switchScreen"
+        android:text="Fun Calcs"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toStartOf="@+id/powerButton"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/subButton"
@@ -54,16 +96,17 @@
         android:textSize="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/addButton"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num1ET"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.229" />
 
     <Button
+        android:id="@+id/DivButton"
         android:layout_width="142dp"
         android:layout_height="70dp"
         android:layout_marginEnd="52dp"
-        android:layout_marginBottom="248dp"
+        android:layout_marginBottom="204dp"
         android:backgroundTint="@color/orange"
         android:onClick="findDiv"
         android:text="/"
@@ -71,39 +114,8 @@
         android:textSize="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/multButton"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subButton"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/addButton"
-        android:layout_width="142dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="340dp"
-        android:backgroundTint="@color/orange"
-        android:onClick="findAdd"
-        android:text="+"
-        android:textColor="@color/white"
-        android:textSize="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/multButton"
-        android:layout_width="142dp"
-        android:layout_height="70dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/orange"
-        android:onClick="findMulti"
-        android:text="x"
-        android:textColor="@color/white"
-        android:textSize="36dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addButton"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/num1ET"
@@ -136,7 +148,7 @@
         android:id="@+id/resultTV"
         android:layout_width="138dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="548dp"
+        android:layout_marginBottom="572dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="Answer"
         android:textSize="24dp"
